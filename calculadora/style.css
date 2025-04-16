@@ -1,13 +1,9 @@
 body{
-    background-color: gray;
-    #div1 {
-        width: 300px;
-        margin: auto;
-        background-color: green;
-        font-family:verdana;
-    }
-    #botoes{
-        font-family: arial;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: Arial, sans-serif;
 
 }
