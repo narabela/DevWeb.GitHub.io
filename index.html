@@ -1,20 +1,39 @@
 <!doctype html>
-<head> <title> Atividade </title>
+<html lang="pt">
+<head> 
+    <meta charset ="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividade Formativa - Calculadora</title>
     <link rel= "stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1> Aula 19/03 </h1>
-    <div id="div1">
-        <p>Digite aqui: <input type="text" id="resultado"> </p>
-        <div id="botoes">
-            <button onclick="guardarValor(1)"> Ok</button><button onclick="guardarValor(1)"> Ok</button><button onclick="guardarValor(1)"> Ok</button>
-            <button onclick="guardarValor(1)"> Ok</button><button onclick="guardarValor(1)"> Ok</button><button onclick="guardarValor(1)"> Ok</button>
-            <button onclick="guardarValor(1)"> Ok</button><button onclick="guardarValor(1)"> Ok</button><button onclick="guardarValor(1)"> Ok</button>
-            <button onclick="guardarValor(1)"> Ok</button><button onclick="guardarValor(1)"> Ok</button><button onclick="guardarValor(1)"> Ok</button>
-            <button onclick="guardarValor(1)"> Ok</button><button onclick="guardarValor(1)"> Ok</button><button onclick="guardarValor(1)"> Ok</button>
-            <button onclick="guardarValor(1)"> Ok</button><button onclick="guardarValor(1)"> Ok</button><button onclick="guardarValor(1)"> Ok</button>
+
+    <div class="calculadora">
+        <input type="text" id="display" disabled>
+        <div class="teclado">
+            <button onclick="limpar()">C</button>
+            <button onclick="guardarValor('/')">/</button>
+            <button onclick="guardarValor('*')">*</button>
+            <button onclick="guardarValor('-')">-</button>
+            
+            <button onclick="guardarValor('7')">7</button>
+            <button onclick="guardarValor('8')">8</button>
+            <button onclick="guardarValor('9')">9</button>
+            <button onclick="guardarValor('+')">+</button>
+
+            <button onclick="guardarValor('4')"> Ok</button>
+            <button onclick="guardarValor('5')"> Ok</button>
+            <button onclick="guardarValor('6')"> Ok</button>
+            <button onclick="calcular()"> = </button>
+
+            <button onclick="guardarValor('1')">1</button>
+            <button onclick="guardarValor('2')">2</button>
+            <button onclick="guardarValor('3')">3</button>
+            <button onclick="guardarValor('0')">0</button>
+            <button onclick="guardarValor('.')">.</button>
         </div>
+                       
     </div>
     <script src="script.js"></script>
 </body>
